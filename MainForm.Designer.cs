@@ -46,8 +46,9 @@
             this.SAMBox = new System.Windows.Forms.TextBox();
             this.cnBox = new System.Windows.Forms.TextBox();
             this.buttonCSV = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.MainOFD = new System.Windows.Forms.OpenFileDialog();
             this.labelVersion = new System.Windows.Forms.Label();
+            this.checkBoxDirectory = new System.Windows.Forms.CheckBox();
             this.LDAPGB.SuspendLayout();
             this.ADDUSERGB.SuspendLayout();
             this.SuspendLayout();
@@ -104,6 +105,7 @@
             // 
             // ADDUSERGB
             // 
+            this.ADDUSERGB.Controls.Add(this.checkBoxDirectory);
             this.ADDUSERGB.Controls.Add(this.buttonCreate);
             this.ADDUSERGB.Controls.Add(this.pswBox);
             this.ADDUSERGB.Controls.Add(this.ppBox);
@@ -117,14 +119,14 @@
             this.ADDUSERGB.Controls.Add(this.cnBox);
             this.ADDUSERGB.Location = new System.Drawing.Point(371, 15);
             this.ADDUSERGB.Name = "ADDUSERGB";
-            this.ADDUSERGB.Size = new System.Drawing.Size(351, 341);
+            this.ADDUSERGB.Size = new System.Drawing.Size(351, 373);
             this.ADDUSERGB.TabIndex = 1;
             this.ADDUSERGB.TabStop = false;
             this.ADDUSERGB.Text = "Add user";
             // 
             // buttonCreate
             // 
-            this.buttonCreate.Location = new System.Drawing.Point(6, 312);
+            this.buttonCreate.Location = new System.Drawing.Point(6, 338);
             this.buttonCreate.Name = "buttonCreate";
             this.buttonCreate.Size = new System.Drawing.Size(339, 23);
             this.buttonCreate.TabIndex = 2;
@@ -225,24 +227,34 @@
             this.buttonCSV.UseVisualStyleBackColor = true;
             this.buttonCSV.Click += new System.EventHandler(this.buttonCSV_Click);
             // 
-            // openFileDialog1
+            // MainOFD
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.MainOFD.FileName = "CSV";
             // 
             // labelVersion
             // 
             this.labelVersion.AutoSize = true;
-            this.labelVersion.Location = new System.Drawing.Point(14, 340);
+            this.labelVersion.Location = new System.Drawing.Point(14, 372);
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(91, 16);
             this.labelVersion.TabIndex = 3;
             this.labelVersion.Text = "VERSION BÊTA";
             // 
+            // checkBoxDirectory
+            // 
+            this.checkBoxDirectory.AutoSize = true;
+            this.checkBoxDirectory.Location = new System.Drawing.Point(6, 312);
+            this.checkBoxDirectory.Name = "checkBoxDirectory";
+            this.checkBoxDirectory.Size = new System.Drawing.Size(201, 20);
+            this.checkBoxDirectory.TabIndex = 4;
+            this.checkBoxDirectory.Text = "Create user\'s repertories";
+            this.checkBoxDirectory.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(736, 370);
+            this.ClientSize = new System.Drawing.Size(736, 400);
             this.Controls.Add(this.labelVersion);
             this.Controls.Add(this.buttonCSV);
             this.Controls.Add(this.ADDUSERGB);
@@ -279,7 +291,8 @@
         private TextBox snBox;
         private Button buttonCreate;
         private Button buttonCSV;
-        private OpenFileDialog openFileDialog1;
+        private OpenFileDialog MainOFD;
         private Label labelVersion;
+        private CheckBox checkBoxDirectory;
     }
 }

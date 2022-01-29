@@ -22,8 +22,8 @@ namespace Manser
 
         private void buttonCSV_Click(object sender, EventArgs e)
         {
-            openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
-            openFileDialog1.ShowDialog();
+            MainOFD.InitialDirectory = Directory.GetCurrentDirectory();
+            MainOFD.ShowDialog();
 
             var csvConfig = new CsvConfiguration(CultureInfo.CurrentCulture)
             {
@@ -33,7 +33,7 @@ namespace Manser
                 Delimiter = ";",
             };
 
-            using var streamReader = File.OpenText(openFileDialog1.FileName);
+            using var streamReader = File.OpenText(MainOFD.FileName);
             using var csvReader = new CsvReader(streamReader, csvConfig);
 
             while (csvReader.Read())
@@ -54,8 +54,12 @@ namespace Manser
                 directoryEntry.Properties["userAccountControl"].Value = 0x0040;
                 directoryEntry.Properties["pwdLastSet"].Value = 0;
                 directoryEntry.CommitChanges();
-                MessageBox.Show("Success");
+                if (checkBoxDirectory.Checked == true)
+                {
+                    System.Diagnostics.Process.Start("cmd.exe", $"mkdir {csvReader.GetField(5)}");
+                }
             }
+            MessageBox.Show("All users as been created !");
         }
 
         private void buttonCreate_Click(object sender, EventArgs e)
@@ -90,6 +94,11 @@ namespace Manser
             directoryEntry.Properties["pwdLastSet"].Value = 0;
             // This line update the user
             directoryEntry.CommitChanges();
+            // These lines create user's directory
+            if (checkBoxDirectory.Checked == true)
+            {
+                System.Diagnostics.Process.Start("cmd.exe", $"mkdir {hdirBox.Text}");
+            }
         }
     }
 }
