@@ -246,9 +246,9 @@
             this.labelVersion.AutoSize = true;
             this.labelVersion.Location = new System.Drawing.Point(14, 372);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(91, 16);
+            this.labelVersion.Size = new System.Drawing.Size(84, 16);
             this.labelVersion.TabIndex = 3;
-            this.labelVersion.Text = "VERSION BÊTA";
+            this.labelVersion.Text = "VERSION 1.1";
             // 
             // MainForm
             // 
