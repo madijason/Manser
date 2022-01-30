@@ -34,6 +34,7 @@
             this.LoginBox = new System.Windows.Forms.TextBox();
             this.ADNameBox = new System.Windows.Forms.TextBox();
             this.ADDUSERGB = new System.Windows.Forms.GroupBox();
+            this.checkBoxDirectory = new System.Windows.Forms.CheckBox();
             this.buttonCreate = new System.Windows.Forms.Button();
             this.pswBox = new System.Windows.Forms.TextBox();
             this.ppBox = new System.Windows.Forms.TextBox();
@@ -48,7 +49,6 @@
             this.buttonCSV = new System.Windows.Forms.Button();
             this.MainOFD = new System.Windows.Forms.OpenFileDialog();
             this.labelVersion = new System.Windows.Forms.Label();
-            this.checkBoxDirectory = new System.Windows.Forms.CheckBox();
             this.LDAPGB.SuspendLayout();
             this.ADDUSERGB.SuspendLayout();
             this.SuspendLayout();
@@ -123,6 +123,16 @@
             this.ADDUSERGB.TabIndex = 1;
             this.ADDUSERGB.TabStop = false;
             this.ADDUSERGB.Text = "Add user";
+            // 
+            // checkBoxDirectory
+            // 
+            this.checkBoxDirectory.AutoSize = true;
+            this.checkBoxDirectory.Location = new System.Drawing.Point(6, 312);
+            this.checkBoxDirectory.Name = "checkBoxDirectory";
+            this.checkBoxDirectory.Size = new System.Drawing.Size(201, 20);
+            this.checkBoxDirectory.TabIndex = 4;
+            this.checkBoxDirectory.Text = "Create user\'s repertories";
+            this.checkBoxDirectory.UseVisualStyleBackColor = true;
             // 
             // buttonCreate
             // 
@@ -239,16 +249,6 @@
             this.labelVersion.Size = new System.Drawing.Size(91, 16);
             this.labelVersion.TabIndex = 3;
             this.labelVersion.Text = "VERSION BÊTA";
-            // 
-            // checkBoxDirectory
-            // 
-            this.checkBoxDirectory.AutoSize = true;
-            this.checkBoxDirectory.Location = new System.Drawing.Point(6, 312);
-            this.checkBoxDirectory.Name = "checkBoxDirectory";
-            this.checkBoxDirectory.Size = new System.Drawing.Size(201, 20);
-            this.checkBoxDirectory.TabIndex = 4;
-            this.checkBoxDirectory.Text = "Create user\'s repertories";
-            this.checkBoxDirectory.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 

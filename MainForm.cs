@@ -56,7 +56,7 @@ namespace Manser
                 directoryEntry.CommitChanges();
                 if (checkBoxDirectory.Checked == true)
                 {
-                    System.Diagnostics.Process.Start("cmd.exe", $"mkdir {csvReader.GetField(5)}");
+                    System.IO.Directory.CreateDirectory(csvReader.GetField(5));
                 }
             }
             MessageBox.Show("All users as been created !");
@@ -94,10 +94,10 @@ namespace Manser
             directoryEntry.Properties["pwdLastSet"].Value = 0;
             // This line update the user
             directoryEntry.CommitChanges();
-            // These lines create user's directory
+            // These lines create user's directory by using the CMD
             if (checkBoxDirectory.Checked == true)
             {
-                System.Diagnostics.Process.Start("cmd.exe", $"mkdir {hdirBox.Text}");
+                System.IO.Directory.CreateDirectory(ppBox.Text);
             }
         }
     }
