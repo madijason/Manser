@@ -39,9 +39,8 @@
             this.pswBox = new System.Windows.Forms.TextBox();
             this.ppBox = new System.Windows.Forms.TextBox();
             this.initBox = new System.Windows.Forms.TextBox();
-            this.hdriveBox = new System.Windows.Forms.TextBox();
+            this.groupBox = new System.Windows.Forms.TextBox();
             this.hdirBox = new System.Windows.Forms.TextBox();
-            this.spBox = new System.Windows.Forms.TextBox();
             this.givenBox = new System.Windows.Forms.TextBox();
             this.snBox = new System.Windows.Forms.TextBox();
             this.SAMBox = new System.Windows.Forms.TextBox();
@@ -82,7 +81,7 @@
             // 
             this.PasswordBox.Location = new System.Drawing.Point(6, 80);
             this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.Size = new System.Drawing.Size(339, 23);
+            this.PasswordBox.Size = new System.Drawing.Size(339, 21);
             this.PasswordBox.TabIndex = 3;
             this.PasswordBox.Text = "Password";
             this.PasswordBox.UseSystemPasswordChar = true;
@@ -91,7 +90,7 @@
             // 
             this.LoginBox.Location = new System.Drawing.Point(6, 51);
             this.LoginBox.Name = "LoginBox";
-            this.LoginBox.Size = new System.Drawing.Size(339, 23);
+            this.LoginBox.Size = new System.Drawing.Size(339, 21);
             this.LoginBox.TabIndex = 2;
             this.LoginBox.Text = "Login";
             // 
@@ -99,7 +98,7 @@
             // 
             this.ADNameBox.Location = new System.Drawing.Point(6, 22);
             this.ADNameBox.Name = "ADNameBox";
-            this.ADNameBox.Size = new System.Drawing.Size(339, 23);
+            this.ADNameBox.Size = new System.Drawing.Size(339, 21);
             this.ADNameBox.TabIndex = 1;
             this.ADNameBox.Text = "LDAP://CN=Users,DC=ARSG734,DC=LOCAL";
             // 
@@ -110,16 +109,15 @@
             this.ADDUSERGB.Controls.Add(this.pswBox);
             this.ADDUSERGB.Controls.Add(this.ppBox);
             this.ADDUSERGB.Controls.Add(this.initBox);
-            this.ADDUSERGB.Controls.Add(this.hdriveBox);
+            this.ADDUSERGB.Controls.Add(this.groupBox);
             this.ADDUSERGB.Controls.Add(this.hdirBox);
-            this.ADDUSERGB.Controls.Add(this.spBox);
             this.ADDUSERGB.Controls.Add(this.givenBox);
             this.ADDUSERGB.Controls.Add(this.snBox);
             this.ADDUSERGB.Controls.Add(this.SAMBox);
             this.ADDUSERGB.Controls.Add(this.cnBox);
             this.ADDUSERGB.Location = new System.Drawing.Point(371, 15);
             this.ADDUSERGB.Name = "ADDUSERGB";
-            this.ADDUSERGB.Size = new System.Drawing.Size(351, 373);
+            this.ADDUSERGB.Size = new System.Drawing.Size(351, 330);
             this.ADDUSERGB.TabIndex = 1;
             this.ADDUSERGB.TabStop = false;
             this.ADDUSERGB.Text = "Add user";
@@ -127,16 +125,16 @@
             // checkBoxDirectory
             // 
             this.checkBoxDirectory.AutoSize = true;
-            this.checkBoxDirectory.Location = new System.Drawing.Point(6, 312);
+            this.checkBoxDirectory.Location = new System.Drawing.Point(6, 281);
             this.checkBoxDirectory.Name = "checkBoxDirectory";
-            this.checkBoxDirectory.Size = new System.Drawing.Size(201, 20);
+            this.checkBoxDirectory.Size = new System.Drawing.Size(160, 19);
             this.checkBoxDirectory.TabIndex = 4;
             this.checkBoxDirectory.Text = "Create user\'s repertories";
             this.checkBoxDirectory.UseVisualStyleBackColor = true;
             // 
             // buttonCreate
             // 
-            this.buttonCreate.Location = new System.Drawing.Point(6, 338);
+            this.buttonCreate.Location = new System.Drawing.Point(6, 307);
             this.buttonCreate.Name = "buttonCreate";
             this.buttonCreate.Size = new System.Drawing.Size(339, 23);
             this.buttonCreate.TabIndex = 2;
@@ -146,18 +144,18 @@
             // 
             // pswBox
             // 
-            this.pswBox.Location = new System.Drawing.Point(6, 283);
+            this.pswBox.Location = new System.Drawing.Point(6, 252);
             this.pswBox.Name = "pswBox";
-            this.pswBox.Size = new System.Drawing.Size(339, 23);
+            this.pswBox.Size = new System.Drawing.Size(339, 21);
             this.pswBox.TabIndex = 11;
             this.pswBox.Text = "Password";
             this.pswBox.UseSystemPasswordChar = true;
             // 
             // ppBox
             // 
-            this.ppBox.Location = new System.Drawing.Point(6, 254);
+            this.ppBox.Location = new System.Drawing.Point(6, 223);
             this.ppBox.Name = "ppBox";
-            this.ppBox.Size = new System.Drawing.Size(339, 23);
+            this.ppBox.Size = new System.Drawing.Size(339, 21);
             this.ppBox.TabIndex = 10;
             this.ppBox.Text = "Profile Path";
             // 
@@ -165,41 +163,33 @@
             // 
             this.initBox.BackColor = System.Drawing.SystemColors.Window;
             this.initBox.Enabled = false;
-            this.initBox.Location = new System.Drawing.Point(6, 225);
+            this.initBox.Location = new System.Drawing.Point(6, 194);
             this.initBox.Name = "initBox";
-            this.initBox.Size = new System.Drawing.Size(339, 23);
+            this.initBox.Size = new System.Drawing.Size(339, 21);
             this.initBox.TabIndex = 9;
             this.initBox.Text = "Initials";
             // 
-            // hdriveBox
+            // groupBox
             // 
-            this.hdriveBox.Location = new System.Drawing.Point(6, 196);
-            this.hdriveBox.Name = "hdriveBox";
-            this.hdriveBox.Size = new System.Drawing.Size(339, 23);
-            this.hdriveBox.TabIndex = 8;
-            this.hdriveBox.Text = "Home Drive";
+            this.groupBox.Location = new System.Drawing.Point(6, 167);
+            this.groupBox.Name = "groupBox";
+            this.groupBox.Size = new System.Drawing.Size(339, 21);
+            this.groupBox.TabIndex = 8;
+            this.groupBox.Text = "Group";
             // 
             // hdirBox
             // 
-            this.hdirBox.Location = new System.Drawing.Point(6, 167);
+            this.hdirBox.Location = new System.Drawing.Point(6, 140);
             this.hdirBox.Name = "hdirBox";
-            this.hdirBox.Size = new System.Drawing.Size(339, 23);
+            this.hdirBox.Size = new System.Drawing.Size(339, 21);
             this.hdirBox.TabIndex = 7;
             this.hdirBox.Text = "Home Dir";
-            // 
-            // spBox
-            // 
-            this.spBox.Location = new System.Drawing.Point(6, 138);
-            this.spBox.Name = "spBox";
-            this.spBox.Size = new System.Drawing.Size(339, 23);
-            this.spBox.TabIndex = 6;
-            this.spBox.Text = "ScriptPath";
             // 
             // givenBox
             // 
             this.givenBox.Location = new System.Drawing.Point(6, 109);
             this.givenBox.Name = "givenBox";
-            this.givenBox.Size = new System.Drawing.Size(339, 23);
+            this.givenBox.Size = new System.Drawing.Size(339, 21);
             this.givenBox.TabIndex = 5;
             this.givenBox.Text = "First Name";
             // 
@@ -207,7 +197,7 @@
             // 
             this.snBox.Location = new System.Drawing.Point(6, 80);
             this.snBox.Name = "snBox";
-            this.snBox.Size = new System.Drawing.Size(339, 23);
+            this.snBox.Size = new System.Drawing.Size(339, 21);
             this.snBox.TabIndex = 4;
             this.snBox.Text = "Last Name";
             // 
@@ -215,7 +205,7 @@
             // 
             this.SAMBox.Location = new System.Drawing.Point(6, 51);
             this.SAMBox.Name = "SAMBox";
-            this.SAMBox.Size = new System.Drawing.Size(339, 23);
+            this.SAMBox.Size = new System.Drawing.Size(339, 21);
             this.SAMBox.TabIndex = 3;
             this.SAMBox.Text = "SAMAccount";
             // 
@@ -223,7 +213,7 @@
             // 
             this.cnBox.Location = new System.Drawing.Point(6, 22);
             this.cnBox.Name = "cnBox";
-            this.cnBox.Size = new System.Drawing.Size(339, 23);
+            this.cnBox.Size = new System.Drawing.Size(339, 21);
             this.cnBox.TabIndex = 2;
             this.cnBox.Text = "Full Name";
             // 
@@ -244,9 +234,9 @@
             // labelVersion
             // 
             this.labelVersion.AutoSize = true;
-            this.labelVersion.Location = new System.Drawing.Point(14, 372);
+            this.labelVersion.Location = new System.Drawing.Point(12, 330);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(91, 16);
+            this.labelVersion.Size = new System.Drawing.Size(93, 15);
             this.labelVersion.TabIndex = 3;
             this.labelVersion.Text = "VERSION BÊTA";
             // 
@@ -254,12 +244,12 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(736, 400);
+            this.ClientSize = new System.Drawing.Size(736, 351);
             this.Controls.Add(this.labelVersion);
             this.Controls.Add(this.buttonCSV);
             this.Controls.Add(this.ADDUSERGB);
             this.Controls.Add(this.LDAPGB);
-            this.Font = new System.Drawing.Font("JetBrains Mono", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "MainForm";
             this.Text = "Manser";
             this.LDAPGB.ResumeLayout(false);
@@ -284,9 +274,8 @@
         private TextBox pswBox;
         private TextBox ppBox;
         private TextBox initBox;
-        private TextBox hdriveBox;
+        private TextBox groupBox;
         private TextBox hdirBox;
-        private TextBox spBox;
         private TextBox givenBox;
         private TextBox snBox;
         private Button buttonCreate;

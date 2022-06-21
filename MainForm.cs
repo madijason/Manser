@@ -51,9 +51,7 @@ namespace Manser
                         directoryEntry.Properties["SAMAccountName"].Add(csvReader.GetField(1));
                         directoryEntry.Properties["sn"].Add(csvReader.GetField(2));
                         directoryEntry.Properties["givenName"].Add(csvReader.GetField(3));
-                        directoryEntry.Properties["scriptPath"].Add(csvReader.GetField(4));
                         directoryEntry.Properties["homeDirectory"].Add(csvReader.GetField(5));
-                        directoryEntry.Properties["homeDrive"].Add(csvReader.GetField(6));
                         directoryEntry.Properties["profilePath"].Add(csvReader.GetField(7));
                         directoryEntry.CommitChanges();
                         directoryEntry.Invoke("SetPassword", new object[] { csvReader.GetField(8) });
@@ -64,7 +62,7 @@ namespace Manser
                         directoryEntry.CommitChanges();
                         if (checkBoxDirectory.Checked == true)
                         {
-                            System.IO.Directory.CreateDirectory(csvReader.GetField(5));
+                            Directory.CreateDirectory(csvReader.GetField(5));
                         }
                     }
                 }
@@ -95,12 +93,8 @@ namespace Manser
                     directoryEntry.Properties["sn"].Add(snBox.Text);
                     // This line add the user first name
                     directoryEntry.Properties["givenName"].Add(givenBox.Text);
-                    // This line add the script path
-                    directoryEntry.Properties["scriptPath"].Add(spBox.Text);
                     // This line add the home directory
                     directoryEntry.Properties["homeDirectory"].Add(hdirBox.Text);
-                    // This line add the home drive
-                    directoryEntry.Properties["homeDrive"].Add(hdriveBox.Text);
                     // This line add the profile path
                     directoryEntry.Properties["profilePath"].Add(ppBox.Text);
                     // This line create the user
@@ -120,7 +114,7 @@ namespace Manser
                     // These lines create user's directory by using the CMD
                     if (checkBoxDirectory.Checked == true)
                     {
-                        System.IO.Directory.CreateDirectory(ppBox.Text);
+                        Directory.CreateDirectory(ppBox.Text);
                     }
                     MessageBox.Show("User as been created !");
                 }
