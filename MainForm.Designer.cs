@@ -51,7 +51,7 @@
             this.LDAPGB.SuspendLayout();
             this.ADDUSERGB.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // LDAPGB
             // 
             this.LDAPGB.Controls.Add(this.buttonLogin);
@@ -238,7 +238,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(93, 15);
             this.labelVersion.TabIndex = 3;
-            this.labelVersion.Text = "VERSION BÊTA";
+            this.labelVersion.Text = "VERSION 2.0";
             // 
             // MainForm
             // 
