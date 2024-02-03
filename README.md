@@ -1,6 +1,7 @@
 # Manser - Gestionnaire de l'Active Directory
 
-**Version 2.0 - Archivé le 04-01-2024**
+**Version 2.1 - Archivé le 04-01-2024**
+**Modifié le 03-02-2024**
 
 ## Introduction
 

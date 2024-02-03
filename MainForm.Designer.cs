@@ -28,237 +28,236 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LDAPGB = new System.Windows.Forms.GroupBox();
-            this.buttonLogin = new System.Windows.Forms.Button();
-            this.PasswordBox = new System.Windows.Forms.TextBox();
-            this.LoginBox = new System.Windows.Forms.TextBox();
-            this.ADNameBox = new System.Windows.Forms.TextBox();
-            this.ADDUSERGB = new System.Windows.Forms.GroupBox();
-            this.checkBoxDirectory = new System.Windows.Forms.CheckBox();
-            this.buttonCreate = new System.Windows.Forms.Button();
-            this.pswBox = new System.Windows.Forms.TextBox();
-            this.ppBox = new System.Windows.Forms.TextBox();
-            this.initBox = new System.Windows.Forms.TextBox();
-            this.groupBox = new System.Windows.Forms.TextBox();
-            this.hdirBox = new System.Windows.Forms.TextBox();
-            this.givenBox = new System.Windows.Forms.TextBox();
-            this.snBox = new System.Windows.Forms.TextBox();
-            this.SAMBox = new System.Windows.Forms.TextBox();
-            this.cnBox = new System.Windows.Forms.TextBox();
-            this.buttonCSV = new System.Windows.Forms.Button();
-            this.MainOFD = new System.Windows.Forms.OpenFileDialog();
-            this.labelVersion = new System.Windows.Forms.Label();
-            this.LDAPGB.SuspendLayout();
-            this.ADDUSERGB.SuspendLayout();
-            this.SuspendLayout();
-            //
+            LDAPGB = new GroupBox();
+            buttonLogin = new Button();
+            PasswordBox = new TextBox();
+            LoginBox = new TextBox();
+            ADNameBox = new TextBox();
+            ADDUSERGB = new GroupBox();
+            checkBoxDirectory = new CheckBox();
+            buttonCreate = new Button();
+            pswBox = new TextBox();
+            ppBox = new TextBox();
+            initBox = new TextBox();
+            groupBox = new TextBox();
+            hdirBox = new TextBox();
+            givenBox = new TextBox();
+            snBox = new TextBox();
+            SAMBox = new TextBox();
+            cnBox = new TextBox();
+            buttonCSV = new Button();
+            MainOFD = new OpenFileDialog();
+            labelVersion = new Label();
+            LDAPGB.SuspendLayout();
+            ADDUSERGB.SuspendLayout();
+            SuspendLayout();
+            // 
             // LDAPGB
             // 
-            this.LDAPGB.Controls.Add(this.buttonLogin);
-            this.LDAPGB.Controls.Add(this.PasswordBox);
-            this.LDAPGB.Controls.Add(this.LoginBox);
-            this.LDAPGB.Controls.Add(this.ADNameBox);
-            this.LDAPGB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LDAPGB.Location = new System.Drawing.Point(14, 15);
-            this.LDAPGB.Name = "LDAPGB";
-            this.LDAPGB.Size = new System.Drawing.Size(351, 135);
-            this.LDAPGB.TabIndex = 0;
-            this.LDAPGB.TabStop = false;
-            this.LDAPGB.Text = "LDAP";
+            LDAPGB.Controls.Add(buttonLogin);
+            LDAPGB.Controls.Add(PasswordBox);
+            LDAPGB.Controls.Add(LoginBox);
+            LDAPGB.Controls.Add(ADNameBox);
+            LDAPGB.ForeColor = SystemColors.ActiveCaptionText;
+            LDAPGB.Location = new Point(14, 15);
+            LDAPGB.Name = "LDAPGB";
+            LDAPGB.Size = new Size(351, 135);
+            LDAPGB.TabIndex = 0;
+            LDAPGB.TabStop = false;
+            LDAPGB.Text = "LDAP";
             // 
             // buttonLogin
             // 
-            this.buttonLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonLogin.Location = new System.Drawing.Point(6, 106);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(339, 23);
-            this.buttonLogin.TabIndex = 1;
-            this.buttonLogin.Text = "Login";
-            this.buttonLogin.UseVisualStyleBackColor = true;
-            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            buttonLogin.ForeColor = SystemColors.ActiveCaptionText;
+            buttonLogin.Location = new Point(6, 106);
+            buttonLogin.Name = "buttonLogin";
+            buttonLogin.Size = new Size(339, 23);
+            buttonLogin.TabIndex = 1;
+            buttonLogin.Text = "Login";
+            buttonLogin.UseVisualStyleBackColor = true;
+            buttonLogin.Click += buttonLogin_Click;
             // 
             // PasswordBox
             // 
-            this.PasswordBox.Location = new System.Drawing.Point(6, 80);
-            this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.Size = new System.Drawing.Size(339, 21);
-            this.PasswordBox.TabIndex = 3;
-            this.PasswordBox.Text = "Password";
-            this.PasswordBox.UseSystemPasswordChar = true;
+            PasswordBox.Location = new Point(6, 80);
+            PasswordBox.Name = "PasswordBox";
+            PasswordBox.Size = new Size(339, 21);
+            PasswordBox.TabIndex = 3;
+            PasswordBox.Text = "Password";
+            PasswordBox.UseSystemPasswordChar = true;
             // 
             // LoginBox
             // 
-            this.LoginBox.Location = new System.Drawing.Point(6, 51);
-            this.LoginBox.Name = "LoginBox";
-            this.LoginBox.Size = new System.Drawing.Size(339, 21);
-            this.LoginBox.TabIndex = 2;
-            this.LoginBox.Text = "Login";
+            LoginBox.Location = new Point(6, 51);
+            LoginBox.Name = "LoginBox";
+            LoginBox.Size = new Size(339, 21);
+            LoginBox.TabIndex = 2;
+            LoginBox.Text = "Login";
             // 
             // ADNameBox
             // 
-            this.ADNameBox.Location = new System.Drawing.Point(6, 22);
-            this.ADNameBox.Name = "ADNameBox";
-            this.ADNameBox.Size = new System.Drawing.Size(339, 21);
-            this.ADNameBox.TabIndex = 1;
-            this.ADNameBox.Text = "LDAP://CN=Users,DC=ARSG734,DC=LOCAL";
+            ADNameBox.Location = new Point(6, 22);
+            ADNameBox.Name = "ADNameBox";
+            ADNameBox.Size = new Size(339, 21);
+            ADNameBox.TabIndex = 1;
+            ADNameBox.Text = "Path";
             // 
             // ADDUSERGB
             // 
-            this.ADDUSERGB.Controls.Add(this.checkBoxDirectory);
-            this.ADDUSERGB.Controls.Add(this.buttonCreate);
-            this.ADDUSERGB.Controls.Add(this.pswBox);
-            this.ADDUSERGB.Controls.Add(this.ppBox);
-            this.ADDUSERGB.Controls.Add(this.initBox);
-            this.ADDUSERGB.Controls.Add(this.groupBox);
-            this.ADDUSERGB.Controls.Add(this.hdirBox);
-            this.ADDUSERGB.Controls.Add(this.givenBox);
-            this.ADDUSERGB.Controls.Add(this.snBox);
-            this.ADDUSERGB.Controls.Add(this.SAMBox);
-            this.ADDUSERGB.Controls.Add(this.cnBox);
-            this.ADDUSERGB.Location = new System.Drawing.Point(371, 15);
-            this.ADDUSERGB.Name = "ADDUSERGB";
-            this.ADDUSERGB.Size = new System.Drawing.Size(351, 330);
-            this.ADDUSERGB.TabIndex = 1;
-            this.ADDUSERGB.TabStop = false;
-            this.ADDUSERGB.Text = "Add user";
+            ADDUSERGB.Controls.Add(checkBoxDirectory);
+            ADDUSERGB.Controls.Add(buttonCreate);
+            ADDUSERGB.Controls.Add(pswBox);
+            ADDUSERGB.Controls.Add(ppBox);
+            ADDUSERGB.Controls.Add(initBox);
+            ADDUSERGB.Controls.Add(groupBox);
+            ADDUSERGB.Controls.Add(hdirBox);
+            ADDUSERGB.Controls.Add(givenBox);
+            ADDUSERGB.Controls.Add(snBox);
+            ADDUSERGB.Controls.Add(SAMBox);
+            ADDUSERGB.Controls.Add(cnBox);
+            ADDUSERGB.Location = new Point(371, 15);
+            ADDUSERGB.Name = "ADDUSERGB";
+            ADDUSERGB.Size = new Size(351, 330);
+            ADDUSERGB.TabIndex = 1;
+            ADDUSERGB.TabStop = false;
+            ADDUSERGB.Text = "Add user";
             // 
             // checkBoxDirectory
             // 
-            this.checkBoxDirectory.AutoSize = true;
-            this.checkBoxDirectory.Location = new System.Drawing.Point(6, 281);
-            this.checkBoxDirectory.Name = "checkBoxDirectory";
-            this.checkBoxDirectory.Size = new System.Drawing.Size(160, 19);
-            this.checkBoxDirectory.TabIndex = 4;
-            this.checkBoxDirectory.Text = "Create user\'s repertories";
-            this.checkBoxDirectory.UseVisualStyleBackColor = true;
+            checkBoxDirectory.AutoSize = true;
+            checkBoxDirectory.Location = new Point(6, 281);
+            checkBoxDirectory.Name = "checkBoxDirectory";
+            checkBoxDirectory.Size = new Size(160, 19);
+            checkBoxDirectory.TabIndex = 4;
+            checkBoxDirectory.Text = "Create user's repertories";
+            checkBoxDirectory.UseVisualStyleBackColor = true;
             // 
             // buttonCreate
             // 
-            this.buttonCreate.Location = new System.Drawing.Point(6, 307);
-            this.buttonCreate.Name = "buttonCreate";
-            this.buttonCreate.Size = new System.Drawing.Size(339, 23);
-            this.buttonCreate.TabIndex = 2;
-            this.buttonCreate.Text = "Create user";
-            this.buttonCreate.UseVisualStyleBackColor = true;
-            this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
+            buttonCreate.Location = new Point(6, 307);
+            buttonCreate.Name = "buttonCreate";
+            buttonCreate.Size = new Size(339, 23);
+            buttonCreate.TabIndex = 2;
+            buttonCreate.Text = "Create user";
+            buttonCreate.UseVisualStyleBackColor = true;
+            buttonCreate.Click += buttonCreate_Click;
             // 
             // pswBox
             // 
-            this.pswBox.Location = new System.Drawing.Point(6, 252);
-            this.pswBox.Name = "pswBox";
-            this.pswBox.Size = new System.Drawing.Size(339, 21);
-            this.pswBox.TabIndex = 11;
-            this.pswBox.Text = "Password";
-            this.pswBox.UseSystemPasswordChar = true;
+            pswBox.Location = new Point(6, 252);
+            pswBox.Name = "pswBox";
+            pswBox.Size = new Size(339, 21);
+            pswBox.TabIndex = 11;
+            pswBox.Text = "Password";
+            pswBox.UseSystemPasswordChar = true;
             // 
             // ppBox
             // 
-            this.ppBox.Location = new System.Drawing.Point(6, 223);
-            this.ppBox.Name = "ppBox";
-            this.ppBox.Size = new System.Drawing.Size(339, 21);
-            this.ppBox.TabIndex = 10;
-            this.ppBox.Text = "Profile Path";
+            ppBox.Location = new Point(6, 223);
+            ppBox.Name = "ppBox";
+            ppBox.Size = new Size(339, 21);
+            ppBox.TabIndex = 10;
+            ppBox.Text = "Profile Path";
             // 
             // initBox
             // 
-            this.initBox.BackColor = System.Drawing.SystemColors.Window;
-            this.initBox.Enabled = false;
-            this.initBox.Location = new System.Drawing.Point(6, 194);
-            this.initBox.Name = "initBox";
-            this.initBox.Size = new System.Drawing.Size(339, 21);
-            this.initBox.TabIndex = 9;
-            this.initBox.Text = "Initials";
+            initBox.BackColor = SystemColors.Window;
+            initBox.Enabled = false;
+            initBox.Location = new Point(6, 194);
+            initBox.Name = "initBox";
+            initBox.Size = new Size(339, 21);
+            initBox.TabIndex = 9;
+            initBox.Text = "Initials";
             // 
             // groupBox
             // 
-            this.groupBox.Location = new System.Drawing.Point(6, 167);
-            this.groupBox.Name = "groupBox";
-            this.groupBox.Size = new System.Drawing.Size(339, 21);
-            this.groupBox.TabIndex = 8;
-            this.groupBox.Text = "Group";
+            groupBox.Location = new Point(6, 167);
+            groupBox.Name = "groupBox";
+            groupBox.Size = new Size(339, 21);
+            groupBox.TabIndex = 8;
+            groupBox.Text = "Group";
             // 
             // hdirBox
             // 
-            this.hdirBox.Location = new System.Drawing.Point(6, 140);
-            this.hdirBox.Name = "hdirBox";
-            this.hdirBox.Size = new System.Drawing.Size(339, 21);
-            this.hdirBox.TabIndex = 7;
-            this.hdirBox.Text = "Home Dir";
+            hdirBox.Location = new Point(6, 140);
+            hdirBox.Name = "hdirBox";
+            hdirBox.Size = new Size(339, 21);
+            hdirBox.TabIndex = 7;
+            hdirBox.Text = "Home Dir";
             // 
             // givenBox
             // 
-            this.givenBox.Location = new System.Drawing.Point(6, 109);
-            this.givenBox.Name = "givenBox";
-            this.givenBox.Size = new System.Drawing.Size(339, 21);
-            this.givenBox.TabIndex = 5;
-            this.givenBox.Text = "First Name";
+            givenBox.Location = new Point(6, 109);
+            givenBox.Name = "givenBox";
+            givenBox.Size = new Size(339, 21);
+            givenBox.TabIndex = 5;
+            givenBox.Text = "First Name";
             // 
             // snBox
             // 
-            this.snBox.Location = new System.Drawing.Point(6, 80);
-            this.snBox.Name = "snBox";
-            this.snBox.Size = new System.Drawing.Size(339, 21);
-            this.snBox.TabIndex = 4;
-            this.snBox.Text = "Last Name";
+            snBox.Location = new Point(6, 80);
+            snBox.Name = "snBox";
+            snBox.Size = new Size(339, 21);
+            snBox.TabIndex = 4;
+            snBox.Text = "Last Name";
             // 
             // SAMBox
             // 
-            this.SAMBox.Location = new System.Drawing.Point(6, 51);
-            this.SAMBox.Name = "SAMBox";
-            this.SAMBox.Size = new System.Drawing.Size(339, 21);
-            this.SAMBox.TabIndex = 3;
-            this.SAMBox.Text = "SAMAccount";
+            SAMBox.Location = new Point(6, 51);
+            SAMBox.Name = "SAMBox";
+            SAMBox.Size = new Size(339, 21);
+            SAMBox.TabIndex = 3;
+            SAMBox.Text = "SAMAccount";
             // 
             // cnBox
             // 
-            this.cnBox.Location = new System.Drawing.Point(6, 22);
-            this.cnBox.Name = "cnBox";
-            this.cnBox.Size = new System.Drawing.Size(339, 21);
-            this.cnBox.TabIndex = 2;
-            this.cnBox.Text = "Full Name";
+            cnBox.Location = new Point(6, 22);
+            cnBox.Name = "cnBox";
+            cnBox.Size = new Size(339, 21);
+            cnBox.TabIndex = 2;
+            cnBox.Text = "Full Name";
             // 
             // buttonCSV
             // 
-            this.buttonCSV.Location = new System.Drawing.Point(14, 153);
-            this.buttonCSV.Name = "buttonCSV";
-            this.buttonCSV.Size = new System.Drawing.Size(351, 23);
-            this.buttonCSV.TabIndex = 2;
-            this.buttonCSV.Text = "CSV";
-            this.buttonCSV.UseVisualStyleBackColor = true;
-            this.buttonCSV.Click += new System.EventHandler(this.buttonCSV_Click);
+            buttonCSV.Location = new Point(14, 153);
+            buttonCSV.Name = "buttonCSV";
+            buttonCSV.Size = new Size(351, 23);
+            buttonCSV.TabIndex = 2;
+            buttonCSV.Text = "CSV";
+            buttonCSV.UseVisualStyleBackColor = true;
+            buttonCSV.Click += buttonCSV_Click;
             // 
             // MainOFD
             // 
-            this.MainOFD.FileName = "CSV";
+            MainOFD.FileName = "CSV";
             // 
             // labelVersion
             // 
-            this.labelVersion.AutoSize = true;
-            this.labelVersion.Location = new System.Drawing.Point(12, 330);
-            this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(93, 15);
-            this.labelVersion.TabIndex = 3;
-            this.labelVersion.Text = "VERSION 2.0";
+            labelVersion.AutoSize = true;
+            labelVersion.Location = new Point(12, 330);
+            labelVersion.Name = "labelVersion";
+            labelVersion.Size = new Size(80, 15);
+            labelVersion.TabIndex = 3;
+            labelVersion.Text = "VERSION 2.1";
             // 
             // MainForm
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(736, 351);
-            this.Controls.Add(this.labelVersion);
-            this.Controls.Add(this.buttonCSV);
-            this.Controls.Add(this.ADDUSERGB);
-            this.Controls.Add(this.LDAPGB);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Name = "MainForm";
-            this.Text = "Manser";
-            this.LDAPGB.ResumeLayout(false);
-            this.LDAPGB.PerformLayout();
-            this.ADDUSERGB.ResumeLayout(false);
-            this.ADDUSERGB.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.White;
+            ClientSize = new Size(736, 351);
+            Controls.Add(labelVersion);
+            Controls.Add(buttonCSV);
+            Controls.Add(ADDUSERGB);
+            Controls.Add(LDAPGB);
+            Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            Name = "MainForm";
+            Text = "Manser";
+            LDAPGB.ResumeLayout(false);
+            LDAPGB.PerformLayout();
+            ADDUSERGB.ResumeLayout(false);
+            ADDUSERGB.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
